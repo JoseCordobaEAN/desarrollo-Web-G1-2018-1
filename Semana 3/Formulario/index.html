@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Ejemplo Formulario</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="encabezado">Mi primer Formulario</h2>
+    </header>
+    <div class="wrapper">
+        <form action="" method="get">
+            <div class="textos">
+                <input type="text" name="nombre" id="nombre" placeholder="&#128100; Nombre" required autofocus>
+                <input type="email" name="email" id="email" placeholder="&#128231; Correo electrónico" required>
+                <textarea name="comentarios" id="comentarios" placeholder="&#9997; Comentarios"></textarea>
+            </div>
+            <div class="radios">
+                <input type="radio" name="sexo" id="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="sexo" id="mujer">
+                <label for="mujer">Mujer</label>
+                <input type="radio" name="sexo" id="otro">
+                <label for="otro">Otro</label>
+            </div>
+            <div class="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
