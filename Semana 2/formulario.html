@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Ejercicio desarrollo web EAN">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Jose Cordoba">
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Mi Primer Página</title>
+</head>
+
+<body>
+    <header>
+        <!--- Este es un comentario --->
+        <h1 style="font-family: Lobster;">Hola Clase de Desarrollo WEB</h1>
+        <nav>
+            <ul>
+                <l1><a href="index.html">Home</a></l1>
+                <l1><a href="#">Formulario</a></l1>
+                <l1><a href="#">fotos</a></l1>
+                <l1><a href="#">etc</a></l1>
+                <l1><a href="#">contacto</a></l1>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form action="">
+            <input id="nombre" type="text" placeholder="Tu nombre">
+            <textarea name="" id="comentario" cols="30" rows="10" placeholder="Comentarios"></textarea>
+
+            <select name="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+
+            <input type="checkbox" name="comida" value="arroz"> arroz
+            <input type="checkbox" name="comida" value="papa"> papa
+            <input type="checkbox" name="comida" value="carne"> carne
+
+            <input type="color">
+
+            <input type="submit" value="Enviar">
+        </form>
+
+    </section>
+
+
+    <footer>
+        <p>Hecho con <i class="fa fa-heart" style="color: red; font-size: 25px"></i> para mis estudiantes de desarrollo web</p>
+
+        <a href="#top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+
+</body>
+
+</html>

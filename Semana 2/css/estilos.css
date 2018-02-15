@@ -1,0 +1,70 @@
+body {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: serif;
+    background: #000022;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.imagen-rectangular {
+    width: 300px;
+    border-radius: 15%;
+}
+
+#main { 
+    background: rgb(77, 82, 89);
+    color: #FFFFFF;
+    display: grid,flex;
+    width: 90%;
+    border-bottom-style: dotted;
+    margin: auto;
+    
+}
+
+.corazon {
+    color: #FF0000; 
+    font-size: 25px;
+    
+}
+
+#img-leon1:hover {
+    width: 500px;
+    transition: width 500ms;
+}
+
+#img-leon1 {
+    transition: width 500ms;
+}
+
+.menu {
+    display: inline-block;
+    margin:  10px auto;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+l1 {
+    float: left;
+    margin: 2px;
+}
+
+.menu:hover {
+    background-color: black;
+    color: white;
+}

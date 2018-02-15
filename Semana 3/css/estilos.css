@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    font-size: 20px;
+}
+
+.wrapper {
+    background-color: rgba(200,200,200,0.5);
+    width: 80%;
+    margin: auto;
+}
+
+.caja {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 90px;
+    margin-right: 100px;
+    padding: 20px;
+    width: 25%;
+    background: #FF0000;
+    border: 1px black solid;
+    display: inline-block;
+}
+
+body {
+    background-image: url(../recursos/architecture-3121009_1920.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: space;
+    background-attachment: fixed;
+}
+
+.texto {
+    text-align: center;
+    font-family: monospace;
+    font-weight: bolder;
+    /*text-decoration: underline;*/
+    color: #fff;
+    line-height: normal;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}    
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: navy;
+    text-decoration: underline;
+    font-size: 20px;
+    background-color: white;
+}
+
+a:visited{
+    color: purple;
+}
