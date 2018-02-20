@@ -72,5 +72,5 @@ function areaTriangulo(lado1,lado2,lado3){
     var s_lado1 = semiperimetro - lado1;
     var s_lado2 = semiperimetro - lado2;
     var s_lado3 = semiperimetro - lado3;
-    return (semiperimetro*s_lado1*s_lado2*s_lado3)**(1/2)
+    return (semiperimetro*s_lado1*s_lado2*s_lado3)**(1/2);
 }
