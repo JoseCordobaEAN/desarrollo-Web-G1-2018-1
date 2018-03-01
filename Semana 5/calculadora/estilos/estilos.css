@@ -10,6 +10,7 @@
     max-width: 1000px;
     background-color: rgba(0,0,0,.8);
     display: block;
+    padding: 10px;
 }
 
 body {
@@ -37,4 +38,13 @@ body {
     width: 30px;
     height: 30px;
     text-align: center;
+}
+
+#caja-historial {
+    width: 80%;
+    background: rgba(255,255,255,0.9);
+    max-height: 100px;
+    overflow: scroll;
+    margin: 10px auto;
+    padding: 10px;
 }

@@ -1,4 +1,7 @@
 var pantalla = document.getElementById("pantalla");
+var btnNumeros = document.getElementsByClassName("btn-num");
+var memoria = 0;
+var cajaHistorial = document.getElementById("caja-historial");
 
 /**
  * Maneja los clicks a los numeros
@@ -11,32 +14,28 @@ var numClick = function () {
     }
 };
 
-var btnNumeros = document.getElementsByClassName("btn-num");
-
 for (var i = 0; i < btnNumeros.length; i++) {
     btnNumeros[i].onclick = numClick;
 }
 
-var memoria = 0;
-var lastOperator = "";
-
 document.getElementById("operator-+").onclick = function () {
+    var hijo = document.createElement("p");
+    hijo.textContent = memoria + " + " +
+        pantalla.getAttribute("value");
     memoria += Number(pantalla.getAttribute("value"));
-    pantalla.setAttribute("value",0);
-    lastOperator = "+";
+    hijo.textContent += " = " + memoria;
+    pantalla.setAttribute("value", 0);
+    cajaHistorial.appendChild(hijo);
 };
 
 document.getElementById("operator-=").onclick = function () {
-    switch(lastOperator){
-        case "+":
-            memoria += Number(pantalla.getAttribute("value"));
-            lastOperator = "";
-            break;
-    }
-    pantalla.setAttribute("value",memoria);
+    pantalla.setAttribute("value", memoria);
 };
 
 document.getElementById("operator-c").onclick = function () {
     memoria = 0;
-    pantalla.setAttribute("value",0);
+    pantalla.setAttribute("value", 0);
+    while(cajaHistorial.firstChild){
+        cajaHistorial.removeChild(cajaHistorial.firstChild);
+    }
 };
