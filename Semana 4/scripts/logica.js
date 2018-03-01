@@ -86,3 +86,5 @@ var elementoNuevo = document.createElement("i");
 elementoNuevo.textContent = "Soy texto extra"
 
 elementoPorId.appendChild(elementoNuevo);
+
+var elemento = elementoPorId.removeChild(elementoNuevo);

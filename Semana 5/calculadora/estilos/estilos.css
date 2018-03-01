@@ -1,0 +1,40 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.wrapper {
+    width: 80%;
+    margin: 10px auto;
+    max-width: 1000px;
+    background-color: rgba(0,0,0,.8);
+    display: block;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+#pantalla {
+    margin: 5px auto;
+    width: 80%;
+    padding: 10px;
+    border: none;
+}
+#caja-patalla {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#numeros {
+    display: inline-block;
+}
+
+.btn-num, .btn-operador {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}

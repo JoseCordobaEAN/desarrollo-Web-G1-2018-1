@@ -1,0 +1,24 @@
+*{
+    margin: 0 auto;
+    padding: 0; 
+}
+
+#imagen {
+    transition: ease 0.2s;
+}
+
+.imagen-normal {
+    width: 300px;
+    margin: auto;
+}
+
+.imagen-zoom{
+    width: 600px;
+}
+
+#btn-zoom {
+    display: block;
+    width: 20%;
+    margin: 10px auto;
+    padding: 10px;
+}
