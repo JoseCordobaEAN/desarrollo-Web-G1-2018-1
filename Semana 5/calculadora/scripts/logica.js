@@ -18,8 +18,25 @@ for (var i = 0; i < btnNumeros.length; i++) {
 }
 
 var memoria = 0;
+var lastOperator = "";
 
 document.getElementById("operator-+").onclick = function () {
     memoria += Number(pantalla.getAttribute("value"));
+    pantalla.setAttribute("value",0);
+    lastOperator = "+";
+};
+
+document.getElementById("operator-=").onclick = function () {
+    switch(lastOperator){
+        case "+":
+            memoria += Number(pantalla.getAttribute("value"));
+            lastOperator = "";
+            break;
+    }
     pantalla.setAttribute("value",memoria);
+};
+
+document.getElementById("operator-c").onclick = function () {
+    memoria = 0;
+    pantalla.setAttribute("value",0);
 };
