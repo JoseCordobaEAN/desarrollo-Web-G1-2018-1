@@ -1,0 +1,18 @@
+
+#chat-box {
+    max-height: 500px;
+    min-height: 200px;
+    overflow: auto;
+    background: #ccc;
+}
+
+.wrapper {
+    background: rgba(100,100,100,0.8);
+}
+
+body {
+    background: url(../img/robot.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-family: 'Nunito', sans-serif;
+}
