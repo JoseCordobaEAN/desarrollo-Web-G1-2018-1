@@ -11,6 +11,7 @@ session_start();
 </head>
 
 <body>
+    <h2>test commit</h2>
     <div id="main">Su sesión es:
         <?php
             echo session_id();
