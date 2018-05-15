@@ -18,4 +18,6 @@ GRANT ALL PRIVILEGES ON peliculas.* TO 'krusty'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
+Y ya tenemos un usuario especifico para nuestra aplicación
+
 
