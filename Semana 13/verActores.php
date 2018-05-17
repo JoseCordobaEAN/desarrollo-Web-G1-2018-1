@@ -14,6 +14,20 @@
         $con = mysqli_connect($host,$usuario,$contrasena,$base_datos);
         if($con){
             echo 'me conecte a '.$base_datos;
+            $sentencia = 'SELECT * FROM peliculas.actores';
+            $data = mysqli_query($con, $sentencia);
+
+            while( $fila = mysqli_fetch_array($data)){
+                ?>
+                    <p>
+                        id actor = <?= $fila['idactores']?> 
+                        nombre = <?= $fila['nombre']?> 
+                        edad = <?= $fila['edad']?> 
+                    </p>
+                <?php
+            }
+
+
         }else{
             echo 'error de conetZion '.$base_datos;
         }
